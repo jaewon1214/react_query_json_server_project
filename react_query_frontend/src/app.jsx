@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import styled from 'styled-components'
 import TodoPage from './pages/TodoPage'
-import HomePage from './pages/Homepage'
+import HomePage from './pages/HomePage'
 import EmployeePage from './pages/EmployeePage'
 import Headbar from './components/layout/Headbar'
 import Sidebar from './components/layout/Sidebar'
