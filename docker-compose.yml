@@ -3,11 +3,13 @@ services:
   frontend:
     build:
       context: ./react_query_frontend
+      dockerfile: Dockerfile
     container_name: react-frontend
 
   json-server:
     build:
-      context: ./json-server
+      context: ./react_query_frontend/server
+      dockerfile: Dockerfile
     container_name: react-json-server
     ports:
       - "3001:3001"
@@ -15,6 +17,7 @@ services:
   nginx:
     build:
       context: ./nginx
+      dockerfile: Dockerfile
     container_name: react-nginx
     ports:
       - "80:80"

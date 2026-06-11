@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 3001
 
-CMD ["npx", "json-server", "--watch", "db.json", "--host", "0.0.0.0", "--port", "3001"]
+CMD ["npx", "json-server", "--host", "0.0.0.0", "--watch", "db.json", "--port", "3001"]
